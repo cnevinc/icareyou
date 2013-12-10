@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:checkable="true"
+        android:icon="@drawable/searchalt_01"
+        android:showAsAction="ifRoom|withText"
+        android:title="Search"/>
+    <item
+        android:id="@+id/action_rateme"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_rateme"/>
+
+</menu>
