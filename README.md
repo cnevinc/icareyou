@@ -1,10 +1,12 @@
-icareyou
+食品安全資料庫
 ========
 
-想要寫些APP能夠"利益眾生" ,目標是能將各個政府機關公布的黑心/危險商品結果,都用一個App可以查得到,那民眾統一去一個地方查就好了
-inspired by James (Partner) Yang
+將衛福部公布的黑心商品結果,都用一個App可以查得到, inspired by James (Partner) Yang
 
-這個App的功能非常簡單,把資料從Jason當中讀出來, 並且顯示結果.
+這個App的功能非常簡單,把資料從JSON當中讀出來, 並且顯示結果.
+
+App 下載:
+https://play.google.com/store/apps/details?id=com.icareyou.food
 
 Todo:
 1. 增加green-DAO的用法說明 
