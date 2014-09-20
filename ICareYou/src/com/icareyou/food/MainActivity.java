@@ -115,7 +115,7 @@ public class MainActivity extends FragmentActivity implements
 	public void onTabReselected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
 	}
-
+ 
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
 		private static final String TAG = "nevin";
@@ -123,6 +123,7 @@ public class MainActivity extends FragmentActivity implements
 
 		public SectionsPagerAdapter(FragmentManager fm) {
 			super(fm);
+			fragments.add(new ReportViewFragment());
 			fragments.add(new ReportViewFragment());
 			fragments.add(new ReportViewFragment());
 		}
@@ -150,6 +151,8 @@ public class MainActivity extends FragmentActivity implements
 				return getString(R.string.title_section1).toUpperCase(l);
 			case 1:
 				return getString(R.string.title_section2).toUpperCase(l);
+			case 2:
+				return getString(R.string.title_section3).toUpperCase(l);
 			}
 			return null;
 		}

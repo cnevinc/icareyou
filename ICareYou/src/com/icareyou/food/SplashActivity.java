@@ -77,7 +77,7 @@ public class SplashActivity extends Activity {
 		protected void onPostExecute(Void s) {
 			closeSelf();
 		}
-	}
+	} 
 	private void updatTable() {
 		Log.d(TAG,"updatTable!!!" );
 		String json = null;
@@ -102,7 +102,9 @@ public class SplashActivity extends Activity {
 //				obj.setImportexport(entry.getString("importexport"));
 				obj.setProductname(entry.getString("productname"));
 				obj.setReportcat(entry.getString("reportcat"));
-				obj.setReportid(entry.getString("reportid"));
+				obj.setReportid(entry.getInt("reportid")+"");
+				Log.d(TAG,"REPORT ID " +entry.getInt("reportid")+""
+						);
 				obj.setResult(entry.getString("result"));
 				obj.setUdpated_at(sdf.parse(entry.getString("udpatedat")));
 				obj.setWatched(false);

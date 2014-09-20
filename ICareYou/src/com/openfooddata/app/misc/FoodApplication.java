@@ -16,6 +16,10 @@
 
 package com.openfooddata.app.misc;
 
+import com.icareyou.food.SplashActivity;
+import com.parse.Parse;
+import com.parse.PushService;
+
 import android.app.Application;
 
 /**
@@ -27,6 +31,8 @@ public class FoodApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Parse.initialize(this, "kzy5un2baEqBMPR2hw86uWCOENBjpx2ctI0TArNr", "Vw3mRnTal3elRAiSBoSfCeupDeFgFNYFC8U5u2cq");
+        PushService.setDefaultPushCallback(this, SplashActivity.class);
         
         init();
     }

@@ -35,6 +35,7 @@
         android:layout_toLeftOf="@+id/wathclist_ib"
         android:layout_toRightOf="@+id/tv_company"
         android:text="結果"
+        android:textColor="#D00"
         android:textSize="17dp" />
 
     <ImageView
